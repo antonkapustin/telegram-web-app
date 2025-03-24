@@ -23,7 +23,7 @@ export class Router {
         let current = location.hash.slice(1);
 
         if (!current) {
-            current = "Home";
+            current = "TgWebAppData";
         } else {
             current = current.match(/\w+/gi)[0];
         }
