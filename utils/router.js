@@ -16,7 +16,7 @@ export class Router {
     }
 
     listener() {
-        window.addEventListener("hashchange", this.onHashChange.bind(this));
+        window.addEventListener("popstate", this.onHashChange.bind(this));
     }
 
     onHashChange() {
@@ -30,6 +30,8 @@ export class Router {
 
         let newCurrent = current[0].charAt(0).toUpperCase() + current.slice(1);
 
-        this.routes.get(newCurrent).call(this);
+        console.log(this.routes)
+
+        this.routes.get(newCurrent).call(null);
     }
 }
