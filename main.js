@@ -1,4 +1,4 @@
-import { App } from './components/app.js';
+import { Ap`p } from './components/app.js';
 
 const tg = window.Telegram.WebApp;
 

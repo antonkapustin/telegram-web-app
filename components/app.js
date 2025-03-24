@@ -21,7 +21,7 @@ export class App {
     }
 
     render(data) {
-        this.router.add("Home", () => {
+        this.router.add("TgWebAppData", () => {
             this.hostElement.innerHTML = '';
             new Home(data, this.hostElement).render();
         });
