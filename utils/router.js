@@ -30,6 +30,6 @@ export class Router {
 
         let newCurrent = current[0].charAt(0).toUpperCase() + current.slice(1);
 
-        this.routes.get(newCurrent).call(null);
+        this.routes.get(newCurrent).call(this);
     }
 }
